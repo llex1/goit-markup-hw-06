@@ -730,31 +730,32 @@ ul {
 
 .modal-checkbox-container {
     display: flex;
+    align-items: center;
     margin-bottom: 30px;
 }
-.modal-checkbox-icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.modal-checkbox__icon {
+    fill: none;
     margin-right: 7px;
     width: 16px;
     height: 15px;
-    border: 2px solid var(--black-color);
+    border: 1px solid var(--black-color);
     border-radius: 2px;
+    transition: var(--transition-main);
 }
-.modal-checkbox__icon {
-    fill: white;
-    visibility: hidden;
-    opacity: 0;
-}
-/* .modal-checkbox:checked~.modal-checkbox-icon-container {
+.modal-checkbox:checked ~.modal-checkbox__icon {
+    fill: var(--white-color);
     background-color: var(--main-color);
-    border-color: var(--main-color);
-} */
+    border: none;
+}
+
+
 .modal-checkbox-label {
     font-size: 14px;
     line-height: 1.71;
     color: var(--grey-color);
+}
+.modal-checkbox-label:hover {
+    cursor: pointer;
 }
 .modal-checkbox-label>a{
     color: var(--main-color);

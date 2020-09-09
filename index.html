@@ -317,7 +317,7 @@
   </footer>
 
   <!-- ============== MODAL ============== -->
-<div class="modal-wrapper is-hidden" data-modal>
+<div class="modal-wrapper is-hidden" data-modal>     <!-- is-hidden -->
   <div class="modal">
     <div class="modal-header">
       <div class="modal-header-close-btn" data-modal-close>
@@ -356,20 +356,13 @@
       
         <label for="comment" class="modal-input-text-label">Комментарий</label>
         <textarea name="comment" id="comment" class="modal-input-textarea" placeholder="Введите текст"></textarea>
-
-<!-- ================= -->
-
-        <div class="modal-checkbox-container">
-          <span class="modal-checkbox-icon-container">
-            <svg width="11" height="8" class="modal-checkbox__icon">
+        <div class="modal-checkbox-container">  
+          <input type="checkbox" class="modal-checkbox hidden" id="modal-checkbox" value="agree" >
+            <svg width="14" height="11" class="modal-checkbox__icon">
               <use href="./images/sprite.svg#modal-checked" ></use>
             </svg>
-          </span>
-          <input type="checkbox" class="modal-checkbox hidden" id="modal-checkbox" >
           <label for="modal-checkbox" class="modal-checkbox-label">Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></label>
-        </div>
-      
-<!-- ================= -->      
+        </div>    
       <button type="submit" class="btn modal-btn">Отправить</button>
       </form>
     
