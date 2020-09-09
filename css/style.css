@@ -607,7 +607,7 @@ ul {
 }
 .modal {
     position: absolute;
-    top: 221px;
+    top: 150px;
     width: 528px;
     padding-bottom: 40px;
     background: var(--white-color);
@@ -747,8 +747,6 @@ ul {
     background-color: var(--main-color);
     border: none;
 }
-
-
 .modal-checkbox-label {
     font-size: 14px;
     line-height: 1.71;
